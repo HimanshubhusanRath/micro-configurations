@@ -1,4 +1,4 @@
-current-payment-provider : APS
+current-payment-provider : CKO
 cko:
   poe:
     redirect:
