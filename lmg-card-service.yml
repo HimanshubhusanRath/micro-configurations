@@ -7,3 +7,5 @@ cko:
         failure: http://abc.com/failure
   authorization:
     url: /payments
+  status-check:
+    url: /payments/{id}
