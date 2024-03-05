@@ -5,3 +5,5 @@ cko:
       url:
         success: http://abc.com/success
         failure: http://abc.com/failure
+  authorization:
+    url: /payment
