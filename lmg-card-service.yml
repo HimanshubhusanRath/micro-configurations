@@ -1,1 +1,7 @@
 current-payment-provider : APS
+cko:
+  poe:
+    redirect:
+      url:
+        success: http://abc.com/success
+        failure: http://abc.com/failure
