@@ -9,3 +9,9 @@ cko:
     url: /payments
   get-payment:
     url: /payments/{id}
+
+
+merchant:
+  blc:
+    authorization:
+      redirect-url: www.blcauth.com/
