@@ -1,4 +1,4 @@
-current-payment-provider: CKO
+
 
 # CHECKOUT.COM (CKO) specific configs
 cko:
@@ -19,14 +19,11 @@ aps:
     blc:
       country:
         site:
-	  merchant-identifier: mPeopJWs
-	  access-code: Cvl7YWPhzFxnSCrByrZz
-	  passphrase-in: TESTSHAIN@a123
-	  passphrase-out: TESTSHAOUT@a123
+    merchant-identifier: mPeopJWs
+    access-code: Cvl7YWPhzFxnSCrByrZz
+    passphrase-in: TESTSHAIN@a123
+    passphrase-out: TESTSHAOUT@a123
 
 
-# Merchant specific configs
-merchant:
-  blc:
-    authorization:
-      redirect-url: http://blc-nodejs-server:4001/handle-response/cardpayment/authorization
+
+current-payment-provider : CKO
