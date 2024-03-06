@@ -25,3 +25,9 @@ aps:
           passphrase-out: TESTSHAOUT@a123
 
 
+# Merchant specific configs
+merchant:
+  blc:
+    authorization:
+      redirect-url: http://blc-nodejs-server:4001/handle-response/cardpayment/authorization
+
