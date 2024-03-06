@@ -3,8 +3,8 @@ cko:
   poe:
     redirect:
       url:
-        success: http://abc.com/success
-        failure: http://abc.com/failure
+        success: http://poe-server:8646/handle-response/authorization/cko
+        failure: http://poe-server:8646/handle-response/authorization/cko
   authorization:
     url: /payments
   get-payment:
@@ -14,4 +14,4 @@ cko:
 merchant:
   blc:
     authorization:
-      redirect-url: www.blcauth.com/
+      redirect-url: http://blc-nodejs-server:4001/handle-response/cardpayment/authorization
