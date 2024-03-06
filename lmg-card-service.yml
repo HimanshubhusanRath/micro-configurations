@@ -1,6 +1,5 @@
+current-payment-provider : CKO
 
-
-# CHECKOUT.COM (CKO) specific configs
 cko:
   poe:
     redirect:
@@ -13,7 +12,6 @@ cko:
     url: /payments/{id}
 
 
-# AMAZON PAYMENT SERVICES (APS) specific configs
 aps:
   merchant:
     blc:
@@ -25,5 +23,3 @@ aps:
     passphrase-out: TESTSHAOUT@a123
 
 
-
-current-payment-provider : CKO
