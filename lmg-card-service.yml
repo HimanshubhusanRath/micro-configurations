@@ -1,20 +1,51 @@
-current-payment-provider : APS
+
+# Merchant specific common configs
+merchant:
+  blc:
+    country:
+      site:
+        payment-provider: APS
+
 
 # CHECKOUT.COM (CKO) specific configs
 cko:
+  api:
+    base-url: https://api.sandbox.checkout.com
+    tokenization-url: /tokens
+    token-exchange-url: /instruments
+    authorization-url: /payments
+    get-payment-url: /payments/{id}
+
+
   poe:
-    redirect:
-      url:
+    authorization:
+      callback-url:
         success: http://poe-server:8646/handle-response/authorization/cko
         failure: http://poe-server:8646/handle-response/authorization/cko
-  authorization:
-    url: /payments
-  get-payment:
-    url: /payments/{id}
+
+  merchant:
+    blc:
+      country:
+        site:
+          api-public-key: Bearer pk_sbox_7j7nhwgme7xkceluu2afavcqqmb
+          api-secret-key: Bearer sk_sbox_dkqatukagblx6fihy5xwduy5m4w
+          authorization:
+            callback-url: http://blc-nodejs-server:4001/handle-response/cardpayment/authorization
 
 
 # AMAZON PAYMENT SERVICES (APS) specific configs
 aps:
+  api:
+    base-url: https://sbpaymentservices.payfort.com/FortAPI
+    authorization-url: /paymentApi
+    tokenization-url: /paymentPage
+
+  poe:
+    authorization:
+      callback-url: http://poe-server:8646/handle-response/authorization/aps
+    tokenization:
+      callback-url: http://poe-server:8646/handle-response/tokenization/aps
+
   merchant:
     blc:
       country:
@@ -23,11 +54,7 @@ aps:
           access-code: Cvl7YWPhzFxnSCrByrZz
           passphrase-in: TESTSHAIN@a123
           passphrase-out: TESTSHAOUT@a123
-
-
-# Merchant specific configs
-merchant:
-  blc:
-    authorization:
-      redirect-url: http://blc-nodejs-server:4001/handle-response/cardpayment/authorization
-
+          authorization:
+            callback-url: http://blc-nodejs-server:4001/handle-response/cardpayment/authorization
+          tokenization:
+            callback-url: http://blc-nodejs-server:4001/handle-response/tokenization-aps
