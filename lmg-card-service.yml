@@ -15,14 +15,14 @@ cko:
 
 # AMAZON PAYMENT SERVICES (APS) specific configs
 aps:
-	merchant:
-		blc:
-			country:
-				site:
-					merchant-identifier: mPeopJWs
-					access-code: Cvl7YWPhzFxnSCrByrZz
-					passphrase-in: TESTSHAIN@a123
-					passphrase-out: TESTSHAOUT@a123
+  merchant:
+    blc:
+      country:
+        site:
+	  merchant-identifier: mPeopJWs
+	  access-code: Cvl7YWPhzFxnSCrByrZz
+	  passphrase-in: TESTSHAIN@a123
+	  passphrase-out: TESTSHAOUT@a123
 
 
 # Merchant specific configs
