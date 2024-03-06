@@ -1,5 +1,6 @@
 current-payment-provider : CKO
 
+# CHECKOUT.COM (CKO) specific configs
 cko:
   poe:
     redirect:
@@ -12,14 +13,15 @@ cko:
     url: /payments/{id}
 
 
+# AMAZON PAYMENT SERVICES (APS) specific configs
 aps:
   merchant:
     blc:
       country:
         site:
-    merchant-identifier: mPeopJWs
-    access-code: Cvl7YWPhzFxnSCrByrZz
-    passphrase-in: TESTSHAIN@a123
-    passphrase-out: TESTSHAOUT@a123
+          merchant-identifier: mPeopJWs
+          access-code: Cvl7YWPhzFxnSCrByrZz
+          passphrase-in: TESTSHAIN@a123
+          passphrase-out: TESTSHAOUT@a123
 
 
