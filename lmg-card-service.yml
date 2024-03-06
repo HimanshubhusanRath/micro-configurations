@@ -21,7 +21,7 @@ aps:
         site:
           merchant-identifier: mPeopJWs
           access-code: Cvl7YWPhzFxnSCrByrZz
-          passphrase-in: TESTSHAIN@a123___
+          passphrase-in: TESTSHAIN@a123
           passphrase-out: TESTSHAOUT@a123
 
 
