@@ -1,4 +1,4 @@
-current-payment-provider : CKO
+current-payment-provider : APS
 
 # CHECKOUT.COM (CKO) specific configs
 cko:
