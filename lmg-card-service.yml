@@ -1,4 +1,3 @@
-
 # Merchant specific common configs
 merchant:
   blc:
@@ -36,8 +35,8 @@ cko:
 # AMAZON PAYMENT SERVICES (APS) specific configs
 aps:
   api:
-    base-url: https://api.sandbox.checkout.com
-    authorization-url: /payments
+    base-url: https://sbpaymentservices.payfort.com/FortAPI
+    authorization-url: /paymentApi
     tokenization-url: https://sbcheckout.payfort.com/FortAPI/paymentPage
 
   poe:
