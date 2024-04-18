@@ -36,8 +36,8 @@ cko:
 # AMAZON PAYMENT SERVICES (APS) specific configs
 aps:
   api:
-    base-url: https://sbpaymentservices.payfort.com/FortAPI
-    authorization-url: /paymentApi
+    base-url: https://api.sandbox.checkout.com
+    authorization-url: /payments
     tokenization-url: https://sbcheckout.payfort.com/FortAPI/paymentPage
 
   poe:
