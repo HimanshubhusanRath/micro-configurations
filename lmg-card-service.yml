@@ -3,7 +3,7 @@ merchant:
   blc:
     country:
       site:
-        payment-provider: APS
+        payment-provider: CKO
 
 
 # CHECKOUT.COM (CKO) specific configs
