@@ -36,8 +36,8 @@ cko:
 aps:
   api:
     base-url: https://sbpaymentservices.payfort.com/FortAPI
-    authorization-url: /paymentApi
-    tokenization-url: https://sbcheckout.payfort.com/FortAPI/paymentPage____
+    authorization-url: /paymentApi_____
+    tokenization-url: https://sbcheckout.payfort.com/FortAPI/paymentPage
 
   poe:
     authorization:
