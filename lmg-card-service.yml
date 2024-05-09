@@ -38,6 +38,7 @@ aps:
     base-url: https://sbpaymentservices.payfort.com/FortAPI
     authorization-url: /paymentApi
     capture-url: /paymentApi
+    void-url: /paymentApi
     tokenization-url: https://sbcheckout.payfort.com/FortAPI/paymentPage
     transaction-status-url: https://sbpaymentservices.payfort.com/FortAPI/paymentApi
 
